@@ -1,0 +1,54 @@
+PROMPT 1 (Initial / Core Request):
+"Write a C program that acts as a 2D graphics editor on a text-based canvas.
+The canvas should be 50 rows by 80 columns. The program should let the user
+draw shapes using '*' characters on the canvas and display it in the terminal."
+ 
+----------------------------------------------------------------------
+ 
+PROMPT 2 (Shapes):
+"Support the following shapes: line, rectangle, circle, and triangle.
+Use Bresenham's line algorithm for lines, the midpoint circle algorithm
+for circles, and draw rectangles as borders only (not filled)."
+ 
+----------------------------------------------------------------------
+ 
+PROMPT 3 (Object System):
+"Store each shape as an object in an array (max 50 objects). Each object
+should have a type, active/inactive flag, and coordinate fields.
+Support adding, deleting, and modifying each shape type by object ID."
+ 
+----------------------------------------------------------------------
+ 
+PROMPT 4 (Redraw System):
+"After every change, clear the canvas and redraw all active objects
+from scratch using a redraw_all() function."
+ 
+----------------------------------------------------------------------
+ 
+PROMPT 5 (Bounds Checking):
+"Add warnings when a shape's coordinates are outside the canvas bounds,
+but don't block the operation — just warn the user it may be clipped."
+ 
+----------------------------------------------------------------------
+ 
+PROMPT 6 (Interactive Menu):
+"Add an interactive menu loop with numbered options:
+1. Add Line
+2. Add Rectangle
+3. Add Circle
+4. Add Triangle
+5. Delete Object
+6. Modify Line
+7. Modify Rectangle
+8. Modify Circle
+9. Modify Triangle
+10. Display Canvas
+11. List Objects
+0. Exit
+After each operation, automatically redraw and display the canvas."
+ 
+----------------------------------------------------------------------
+ 
+PROMPT 7 (Display):
+"Display the canvas with row and column number labels along the edges
+so the user can identify coordinates easily."
